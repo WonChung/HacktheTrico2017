@@ -18,6 +18,8 @@
 		C06840281E86AA55005E4CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06840261E86AA55005E4CDA /* LaunchScreen.storyboard */; };
 		C06840331E86AA55005E4CDA /* HacktheTricoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06840321E86AA55005E4CDA /* HacktheTricoTests.swift */; };
 		C068403E1E86AA55005E4CDA /* HacktheTricoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068403D1E86AA55005E4CDA /* HacktheTricoUITests.swift */; };
+		E9B96E121E86CC2700741B12 /* Hospitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B96E111E86CC2700741B12 /* Hospitals.swift */; };
+		E9B96E141E86CC4100741B12 /* PlanedParentHood.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B96E131E86CC4100741B12 /* PlanedParentHood.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		DB59A8D74FE79A19A64D9F15 /* Pods-HacktheTricoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTricoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTricoUITests/Pods-HacktheTricoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E4F3548F1D524DD7EE30A658 /* Pods_HacktheTrico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HacktheTrico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9459E9776BA16C8F0540F8B /* Pods-HacktheTrico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTrico.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTrico/Pods-HacktheTrico.debug.xcconfig"; sourceTree = "<group>"; };
+		E9B96E111E86CC2700741B12 /* Hospitals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hospitals.swift; sourceTree = "<group>"; };
+		E9B96E131E86CC4100741B12 /* PlanedParentHood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanedParentHood.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		C068401C1E86AA54005E4CDA /* HacktheTrico */ = {
 			isa = PBXGroup;
 			children = (
+				E9B96E101E86CBEE00741B12 /* API stuff  */,
 				C068401D1E86AA55005E4CDA /* AppDelegate.swift */,
 				C068401F1E86AA55005E4CDA /* ViewController.swift */,
 				C06840211E86AA55005E4CDA /* Main.storyboard */,
@@ -166,6 +171,15 @@
 				C068403F1E86AA55005E4CDA /* Info.plist */,
 			);
 			path = HacktheTricoUITests;
+			sourceTree = "<group>";
+		};
+		E9B96E101E86CBEE00741B12 /* API stuff  */ = {
+			isa = PBXGroup;
+			children = (
+				E9B96E111E86CC2700741B12 /* Hospitals.swift */,
+				E9B96E131E86CC4100741B12 /* PlanedParentHood.swift */,
+			);
+			name = "API stuff ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,7 +464,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C06840201E86AA55005E4CDA /* ViewController.swift in Sources */,
+				E9B96E121E86CC2700741B12 /* Hospitals.swift in Sources */,
 				0F8488941E86B74B00272488 /* Map1ViewController.swift in Sources */,
+				E9B96E141E86CC4100741B12 /* PlanedParentHood.swift in Sources */,
 				C068401E1E86AA55005E4CDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
