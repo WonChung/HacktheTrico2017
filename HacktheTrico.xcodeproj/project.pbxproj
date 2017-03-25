@@ -19,9 +19,9 @@
 		C068403E1E86AA55005E4CDA /* HacktheTricoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068403D1E86AA55005E4CDA /* HacktheTricoUITests.swift */; };
 		C0A564421E86CAF200947C9F /* tabOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A564411E86CAF200947C9F /* tabOneTableViewController.swift */; };
 		C0A564441E86CB0D00947C9F /* tabTwoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A564431E86CB0D00947C9F /* tabTwoTableViewController.swift */; };
-		C0A564471E86E53D00947C9F /* hospitalData.json in Resources */ = {isa = PBXBuildFile; fileRef = C0A564461E86E53D00947C9F /* hospitalData.json */; };
 		C0A5644C1E86E61800947C9F /* Hospitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5644B1E86E61800947C9F /* Hospitals.swift */; };
 		C0A5644E1E86EE2D00947C9F /* tabOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5644D1E86EE2D00947C9F /* tabOneTableViewCell.swift */; };
+		C0EC3FF41E8706310004C32E /* hospitalData.json in Resources */ = {isa = PBXBuildFile; fileRef = C0EC3FF31E8706310004C32E /* hospitalData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +62,9 @@
 		C068403F1E86AA55005E4CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A564411E86CAF200947C9F /* tabOneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabOneTableViewController.swift; path = "Table Views/tabOneTableViewController.swift"; sourceTree = "<group>"; };
 		C0A564431E86CB0D00947C9F /* tabTwoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabTwoTableViewController.swift; path = "Table Views/tabTwoTableViewController.swift"; sourceTree = "<group>"; };
-		C0A564461E86E53D00947C9F /* hospitalData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hospitalData.json; path = ../../../../../Volumes/KINGSTON/hospitalData.json; sourceTree = "<group>"; };
 		C0A5644B1E86E61800947C9F /* Hospitals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hospitals.swift; path = Models/Hospitals.swift; sourceTree = "<group>"; };
 		C0A5644D1E86EE2D00947C9F /* tabOneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabOneTableViewCell.swift; path = "Table Views/tabOneTableViewCell.swift"; sourceTree = "<group>"; };
+		C0EC3FF31E8706310004C32E /* hospitalData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hospitalData.json; sourceTree = SOURCE_ROOT; };
 		C12C6B8E9C186A66F34841F5 /* Pods-HacktheTrico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTrico.release.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTrico/Pods-HacktheTrico.release.xcconfig"; sourceTree = "<group>"; };
 		DB59A8D74FE79A19A64D9F15 /* Pods-HacktheTricoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTricoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTricoUITests/Pods-HacktheTricoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E4F3548F1D524DD7EE30A658 /* Pods_HacktheTrico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HacktheTrico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,7 +191,7 @@
 		C0A564451E86E4DD00947C9F /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				C0A564461E86E53D00947C9F /* hospitalData.json */,
+				C0EC3FF31E8706310004C32E /* hospitalData.json */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -323,7 +323,7 @@
 				C06840281E86AA55005E4CDA /* LaunchScreen.storyboard in Resources */,
 				C06840251E86AA55005E4CDA /* Assets.xcassets in Resources */,
 				C06840231E86AA55005E4CDA /* Main.storyboard in Resources */,
-				C0A564471E86E53D00947C9F /* hospitalData.json in Resources */,
+				C0EC3FF41E8706310004C32E /* hospitalData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
