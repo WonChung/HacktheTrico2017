@@ -23,11 +23,9 @@
 		C0A5644E1E86EE2D00947C9F /* tabOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5644D1E86EE2D00947C9F /* tabOneTableViewCell.swift */; };
 		C0EC3FF41E8706310004C32E /* hospitalData.json in Resources */ = {isa = PBXBuildFile; fileRef = C0EC3FF31E8706310004C32E /* hospitalData.json */; };
 		C0EC3FF61E872C300004C32E /* PlannedParenthood.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC3FF51E872C300004C32E /* PlannedParenthood.swift */; };
-<<<<<<< HEAD
 		C0EC3FF81E8731960004C32E /* tabTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC3FF71E8731960004C32E /* tabTwoTableViewCell.swift */; };
-=======
+
 		C95C126B1E872F61001C0374 /* plannedparenthoodData.json in Resources */ = {isa = PBXBuildFile; fileRef = C95C126A1E872F61001C0374 /* plannedparenthoodData.json */; };
->>>>>>> 10fbba22d832ef4cb27752e9ba304e226418167d
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
