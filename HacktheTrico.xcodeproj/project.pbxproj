@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F8488931E86B74B00272488 /* Map1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map1ViewController.swift; sourceTree = "<group>"; };
+		0F8488931E86B74B00272488 /* Map1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Map1ViewController.swift; sourceTree = "<group>"; };
 		2DA961D501B91DBBADA853DA /* Pods_HacktheTricoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HacktheTricoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45263FCE3DFAFD63FE797A5B /* Pods-HacktheTricoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTricoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTricoTests/Pods-HacktheTricoTests.release.xcconfig"; sourceTree = "<group>"; };
 		68CDDA6DC52B8B78A213B47D /* Pods-HacktheTricoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTricoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTricoTests/Pods-HacktheTricoTests.debug.xcconfig"; sourceTree = "<group>"; };
