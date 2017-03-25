@@ -23,6 +23,7 @@
 		C0A5644E1E86EE2D00947C9F /* tabOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5644D1E86EE2D00947C9F /* tabOneTableViewCell.swift */; };
 		C0EC3FF41E8706310004C32E /* hospitalData.json in Resources */ = {isa = PBXBuildFile; fileRef = C0EC3FF31E8706310004C32E /* hospitalData.json */; };
 		C0EC3FF61E872C300004C32E /* PlannedParenthood.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC3FF51E872C300004C32E /* PlannedParenthood.swift */; };
+		C95C126B1E872F61001C0374 /* plannedparenthoodData.json in Resources */ = {isa = PBXBuildFile; fileRef = C95C126A1E872F61001C0374 /* plannedparenthoodData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		C0EC3FF31E8706310004C32E /* hospitalData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hospitalData.json; sourceTree = SOURCE_ROOT; };
 		C0EC3FF51E872C300004C32E /* PlannedParenthood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlannedParenthood.swift; path = Models/PlannedParenthood.swift; sourceTree = "<group>"; };
 		C12C6B8E9C186A66F34841F5 /* Pods-HacktheTrico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTrico.release.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTrico/Pods-HacktheTrico.release.xcconfig"; sourceTree = "<group>"; };
+		C95C126A1E872F61001C0374 /* plannedparenthoodData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plannedparenthoodData.json; sourceTree = SOURCE_ROOT; };
 		DB59A8D74FE79A19A64D9F15 /* Pods-HacktheTricoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTricoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTricoUITests/Pods-HacktheTricoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E4F3548F1D524DD7EE30A658 /* Pods_HacktheTrico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HacktheTrico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9459E9776BA16C8F0540F8B /* Pods-HacktheTrico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTrico.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTrico/Pods-HacktheTrico.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				C0EC3FF31E8706310004C32E /* hospitalData.json */,
+				C95C126A1E872F61001C0374 /* plannedparenthoodData.json */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				C06840251E86AA55005E4CDA /* Assets.xcassets in Resources */,
 				C06840231E86AA55005E4CDA /* Main.storyboard in Resources */,
 				C0EC3FF41E8706310004C32E /* hospitalData.json in Resources */,
+				C95C126B1E872F61001C0374 /* plannedparenthoodData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
