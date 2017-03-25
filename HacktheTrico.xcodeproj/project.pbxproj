@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F8488941E86B74B00272488 /* Map1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8488931E86B74B00272488 /* Map1ViewController.swift */; };
 		2DE5A70738DDB0C84B505B6E /* Pods_HacktheTricoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA961D501B91DBBADA853DA /* Pods_HacktheTricoTests.framework */; };
 		6E10BDBF720CDCC1C298C285 /* Pods_HacktheTricoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74E252D72AE749334ECA06D /* Pods_HacktheTricoUITests.framework */; };
 		A2B6DB1DE4E2BC9B7BCD2B47 /* Pods_HacktheTrico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F3548F1D524DD7EE30A658 /* Pods_HacktheTrico.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F8488931E86B74B00272488 /* Map1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map1ViewController.swift; sourceTree = "<group>"; };
 		2DA961D501B91DBBADA853DA /* Pods_HacktheTricoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HacktheTricoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45263FCE3DFAFD63FE797A5B /* Pods-HacktheTricoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTricoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTricoTests/Pods-HacktheTricoTests.release.xcconfig"; sourceTree = "<group>"; };
 		68CDDA6DC52B8B78A213B47D /* Pods-HacktheTricoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTricoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTricoTests/Pods-HacktheTricoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				C06840241E86AA55005E4CDA /* Assets.xcassets */,
 				C06840261E86AA55005E4CDA /* LaunchScreen.storyboard */,
 				C06840291E86AA55005E4CDA /* Info.plist */,
+				0F8488931E86B74B00272488 /* Map1ViewController.swift */,
 			);
 			path = HacktheTrico;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C06840201E86AA55005E4CDA /* ViewController.swift in Sources */,
+				0F8488941E86B74B00272488 /* Map1ViewController.swift in Sources */,
 				C068401E1E86AA55005E4CDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,6 +702,7 @@
 				C06840441E86AA55005E4CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C06840451E86AA55005E4CDA /* Build configuration list for PBXNativeTarget "HacktheTricoTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +711,7 @@
 				C06840471E86AA55005E4CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C06840481E86AA55005E4CDA /* Build configuration list for PBXNativeTarget "HacktheTricoUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +720,7 @@
 				C068404A1E86AA55005E4CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
