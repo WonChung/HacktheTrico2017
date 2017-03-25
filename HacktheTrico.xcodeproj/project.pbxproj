@@ -12,7 +12,6 @@
 		6E10BDBF720CDCC1C298C285 /* Pods_HacktheTricoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74E252D72AE749334ECA06D /* Pods_HacktheTricoUITests.framework */; };
 		A2B6DB1DE4E2BC9B7BCD2B47 /* Pods_HacktheTrico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F3548F1D524DD7EE30A658 /* Pods_HacktheTrico.framework */; };
 		C068401E1E86AA55005E4CDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068401D1E86AA55005E4CDA /* AppDelegate.swift */; };
-		C06840201E86AA55005E4CDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068401F1E86AA55005E4CDA /* ViewController.swift */; };
 		C06840231E86AA55005E4CDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06840211E86AA55005E4CDA /* Main.storyboard */; };
 		C06840251E86AA55005E4CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06840241E86AA55005E4CDA /* Assets.xcassets */; };
 		C06840281E86AA55005E4CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06840261E86AA55005E4CDA /* LaunchScreen.storyboard */; };
@@ -20,6 +19,9 @@
 		C068403E1E86AA55005E4CDA /* HacktheTricoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068403D1E86AA55005E4CDA /* HacktheTricoUITests.swift */; };
 		C0A564421E86CAF200947C9F /* tabOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A564411E86CAF200947C9F /* tabOneTableViewController.swift */; };
 		C0A564441E86CB0D00947C9F /* tabTwoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A564431E86CB0D00947C9F /* tabTwoTableViewController.swift */; };
+		C0A564471E86E53D00947C9F /* hospitalData.json in Resources */ = {isa = PBXBuildFile; fileRef = C0A564461E86E53D00947C9F /* hospitalData.json */; };
+		C0A5644C1E86E61800947C9F /* Hospitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5644B1E86E61800947C9F /* Hospitals.swift */; };
+		C0A5644E1E86EE2D00947C9F /* tabOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5644D1E86EE2D00947C9F /* tabOneTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,6 @@
 		B74E252D72AE749334ECA06D /* Pods_HacktheTricoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HacktheTricoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C068401A1E86AA54005E4CDA /* HacktheTrico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HacktheTrico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C068401D1E86AA55005E4CDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C068401F1E86AA55005E4CDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C06840221E86AA55005E4CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C06840241E86AA55005E4CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06840271E86AA55005E4CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +62,9 @@
 		C068403F1E86AA55005E4CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A564411E86CAF200947C9F /* tabOneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabOneTableViewController.swift; path = "Table Views/tabOneTableViewController.swift"; sourceTree = "<group>"; };
 		C0A564431E86CB0D00947C9F /* tabTwoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabTwoTableViewController.swift; path = "Table Views/tabTwoTableViewController.swift"; sourceTree = "<group>"; };
+		C0A564461E86E53D00947C9F /* hospitalData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hospitalData.json; path = ../../../../../Volumes/KINGSTON/hospitalData.json; sourceTree = "<group>"; };
+		C0A5644B1E86E61800947C9F /* Hospitals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hospitals.swift; path = Models/Hospitals.swift; sourceTree = "<group>"; };
+		C0A5644D1E86EE2D00947C9F /* tabOneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabOneTableViewCell.swift; path = "Table Views/tabOneTableViewCell.swift"; sourceTree = "<group>"; };
 		C12C6B8E9C186A66F34841F5 /* Pods-HacktheTrico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTrico.release.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTrico/Pods-HacktheTrico.release.xcconfig"; sourceTree = "<group>"; };
 		DB59A8D74FE79A19A64D9F15 /* Pods-HacktheTricoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTricoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTricoUITests/Pods-HacktheTricoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E4F3548F1D524DD7EE30A658 /* Pods_HacktheTrico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HacktheTrico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,9 +147,10 @@
 		C068401C1E86AA54005E4CDA /* HacktheTrico */ = {
 			isa = PBXGroup;
 			children = (
+				C0A564481E86E5E700947C9F /* Models */,
+				C0A564451E86E4DD00947C9F /* JSON */,
 				C0A564401E86CAC300947C9F /* Table Views */,
 				C068401D1E86AA55005E4CDA /* AppDelegate.swift */,
-				C068401F1E86AA55005E4CDA /* ViewController.swift */,
 				C06840211E86AA55005E4CDA /* Main.storyboard */,
 				C06840241E86AA55005E4CDA /* Assets.xcassets */,
 				C06840261E86AA55005E4CDA /* LaunchScreen.storyboard */,
@@ -178,8 +183,25 @@
 			children = (
 				C0A564411E86CAF200947C9F /* tabOneTableViewController.swift */,
 				C0A564431E86CB0D00947C9F /* tabTwoTableViewController.swift */,
+				C0A5644D1E86EE2D00947C9F /* tabOneTableViewCell.swift */,
 			);
 			name = "Table Views";
+			sourceTree = "<group>";
+		};
+		C0A564451E86E4DD00947C9F /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C0A564461E86E53D00947C9F /* hospitalData.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		C0A564481E86E5E700947C9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0A5644B1E86E61800947C9F /* Hospitals.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +323,7 @@
 				C06840281E86AA55005E4CDA /* LaunchScreen.storyboard in Resources */,
 				C06840251E86AA55005E4CDA /* Assets.xcassets in Resources */,
 				C06840231E86AA55005E4CDA /* Main.storyboard in Resources */,
+				C0A564471E86E53D00947C9F /* hospitalData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +487,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A564441E86CB0D00947C9F /* tabTwoTableViewController.swift in Sources */,
-				C06840201E86AA55005E4CDA /* ViewController.swift in Sources */,
+				C0A5644C1E86E61800947C9F /* Hospitals.swift in Sources */,
+				C0A5644E1E86EE2D00947C9F /* tabOneTableViewCell.swift in Sources */,
 				0F8488941E86B74B00272488 /* Map1ViewController.swift in Sources */,
 				C0A564421E86CAF200947C9F /* tabOneTableViewController.swift in Sources */,
 				C068401E1E86AA55005E4CDA /* AppDelegate.swift in Sources */,

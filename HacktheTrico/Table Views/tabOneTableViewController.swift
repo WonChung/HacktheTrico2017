@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class tabOneTableViewController: UITableViewController {
+class tabOneTableViewController: UITableViewController, UISearchResultsUpdating {
 
     var hospitalData: [Hospitals]!
     
@@ -20,23 +20,21 @@ class tabOneTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let jsonURL = NSBundle.mainBundle().URLForResource("hospitalData", withExtension: "json") else {
+        guard let jsonURL = Bundle.main.url(forResource: "hospitalData", withExtension: "json") else {
             print("Could not find json!")
             return
         }
         
-        let jsonData = NSData(contentsOfURL: jsonURL)!
-        let hospData = JSON(data: jsonData)
+        let jsonData = NSData(contentsOf: jsonURL)!
+        let hospData = JSON(data: jsonData as Data)
         
-        let allHospitalData = collegeData.arrayValue
+        let allHospitalData = hospData.arrayValue
         
         hospitalData = []
         
         for hospital in allHospitalData {
-            let currentHospital = Hospitals(json: hospitalData)
-            if currentHospital.actCom25 != "" {
-                hospitalData.append(currentHospital)
-            }
+            let currentHospital = Hospitals(json: "hospitalData")
+            hospitalData.append(currentHospital)
         }
         
         print(hospitalData!.count)
@@ -55,7 +53,30 @@ class tabOneTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        navigationController?.navigationBar.tintColor = UIColor.white;
+        
+        searchController.searchBar.barTintColor = UIColor.white
+        searchController.searchBar.tintColor = UIColor.black
+        searchController.searchBar.placeholder = "Enter Zip Code Here..."
+    }
 
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let searchBar:UISearchBar = searchController.searchBar
+        var searchBarFrame:CGRect = searchBar.frame
+        if searchController.isActive {
+            searchBarFrame.origin.y = 10
+        }
+        else {
+            searchBarFrame.origin.y = max(0, scrollView.contentOffset.y + scrollView.contentInset.top)
+            
+        }
+        searchController.searchBar.frame = searchBarFrame
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -63,25 +84,49 @@ class tabOneTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+/*    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
-    }
-
+    } */
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        if searchController.isActive && searchController.searchBar.text != "" {
+            return filteredHospitals.count
+        }
+        return hospitalData.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        // 1
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tabOneTableViewCell", for: indexPath) as! tabOneTableViewCell
+        
+        let hospital: Hospitals
+        if searchController.isActive && searchController.searchBar.text != "" {
+            hospital = filteredHospitals[indexPath.row]
+        } else {
+            hospital = hospitalData[indexPath.row]
+        }
+        
+        // 2
+        cell.hospitalNameLabel.text = hospital.provider_name
+        
+        cell.separatorInset = UIEdgeInsets.zero;
+        
         return cell
     }
-    */
+
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+        filteredHospitals = hospitalData.filter { hospital in
+            return (hospital.provider_zip_code.range(of: searchText) != nil)
+        }
+        tableView.reloadData()
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        func updateSearchResultsForSearchController(searchController: UISearchController) {
+            filterContentForSearchText(searchText: searchController.searchBar.text as String!)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -129,3 +174,9 @@ class tabOneTableViewController: UITableViewController {
     */
 
 }
+
+ /* extension ViewController: UISearchResultsUpdating {
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text as! String)
+    }
+} */
