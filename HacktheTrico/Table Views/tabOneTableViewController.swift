@@ -33,9 +33,9 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
         var provider_names = [String]()
         var provider_street_addresses = [String]()
         var provider_zip_codes = [String]()
-        "provider_zip_code": "18510",
-        "average_covered_charges": "27476.79",
-        "average_medicare_payment": "7477.66"
+        var average_covered_charges = [String]()
+        var average_medicare_payments = [String]()
+
         
         do {
             if let jsonData = jsonData,
@@ -45,6 +45,18 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
                     if let name = provider["provider_name"] as? String {
                         provider_names.append(name)
                     }
+                    if let address = provider["provider_street_address"] as? String {
+                        provider_street_addresses.append(address)
+                    }
+                    if let code = provider["provider_zip_code"] as? String {
+                        provider_zip_codes.append(code)
+                    }
+                    if let charge = provider["average_covered_charge"] as? String {
+                        average_covered_charges.append(charge)
+                    }
+                    if let payment = provider["average_medicare_payment"] as? String {
+                        average_medicare_payments.append(payment)
+                    }
                 }
             }
         } catch {
@@ -52,6 +64,11 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
         }
         
         print(provider_names)
+        print(provider_street_addresses)
+        print(provider_zip_codes)
+        print(average_covered_charges)
+        print(average_medicare_payments)
+        
 
         
             
