@@ -17,9 +17,24 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
     
     let searchController = UISearchController(searchResultsController: nil)
     
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    /*
+    IBOut var backButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 20, y: 20, width: 44, height: 44))
+        button.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+        return button
+    }()*/
+
+    
+    @IBAction func goBack() {
+        let vc = (self.storyboard?.instantiateViewController(withIdentifier: "VC1"))! as UIViewController
+        self.present(vc, animated: false, completion: nil)
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       // backButton.(self, action: #selector(goBack), for: .touchUpInside)
         guard let jsonURL = Bundle.main.url(forResource: "hospitalData", withExtension: "json") else {
             print("Could not find json!")
             return
@@ -49,14 +64,18 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
         tableView.tableHeaderView = searchController.searchBar
         
         searchController.hidesNavigationBarDuringPresentation = false
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+ /*       self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(self.buttonAction(sender:))
+        
+        navigationController?.popViewControllerAnimated(true) */
+        
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
