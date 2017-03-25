@@ -17,21 +17,13 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
     var filteredHospitals = [Hospitals]()
     
     let searchController = UISearchController(searchResultsController: nil)
-    
-    @IBOutlet weak var backButton: UIBarButtonItem!
-    /*
-    IBOut var backButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 20, y: 20, width: 44, height: 44))
-        button.addTarget(self, action: #selector(goBack), for: .touchUpInside)
-        return button
-    }()*/
 
     
-    @IBAction func goBack() {
+/*    @IBAction func goBack() {
         let vc = (self.storyboard?.instantiateViewController(withIdentifier: "VC1"))! as UIViewController
         self.present(vc, animated: false, completion: nil)
     }
-
+*/
     
     override func viewDidLoad() {
         super.viewDidLoad()

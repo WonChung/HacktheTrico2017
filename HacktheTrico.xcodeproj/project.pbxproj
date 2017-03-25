@@ -22,6 +22,7 @@
 		C0A5644C1E86E61800947C9F /* Hospitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5644B1E86E61800947C9F /* Hospitals.swift */; };
 		C0A5644E1E86EE2D00947C9F /* tabOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5644D1E86EE2D00947C9F /* tabOneTableViewCell.swift */; };
 		C0EC3FF41E8706310004C32E /* hospitalData.json in Resources */ = {isa = PBXBuildFile; fileRef = C0EC3FF31E8706310004C32E /* hospitalData.json */; };
+		C0EC3FF61E872C300004C32E /* PlannedParenthood.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC3FF51E872C300004C32E /* PlannedParenthood.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		C0A5644B1E86E61800947C9F /* Hospitals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hospitals.swift; path = Models/Hospitals.swift; sourceTree = "<group>"; };
 		C0A5644D1E86EE2D00947C9F /* tabOneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabOneTableViewCell.swift; path = "Table Views/tabOneTableViewCell.swift"; sourceTree = "<group>"; };
 		C0EC3FF31E8706310004C32E /* hospitalData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hospitalData.json; sourceTree = SOURCE_ROOT; };
+		C0EC3FF51E872C300004C32E /* PlannedParenthood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlannedParenthood.swift; path = Models/PlannedParenthood.swift; sourceTree = "<group>"; };
 		C12C6B8E9C186A66F34841F5 /* Pods-HacktheTrico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTrico.release.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTrico/Pods-HacktheTrico.release.xcconfig"; sourceTree = "<group>"; };
 		DB59A8D74FE79A19A64D9F15 /* Pods-HacktheTricoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTricoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTricoUITests/Pods-HacktheTricoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E4F3548F1D524DD7EE30A658 /* Pods_HacktheTrico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HacktheTrico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A5644B1E86E61800947C9F /* Hospitals.swift */,
+				C0EC3FF51E872C300004C32E /* PlannedParenthood.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				C0A564441E86CB0D00947C9F /* tabTwoTableViewController.swift in Sources */,
 				C0A5644C1E86E61800947C9F /* Hospitals.swift in Sources */,
 				C0A5644E1E86EE2D00947C9F /* tabOneTableViewCell.swift in Sources */,
+				C0EC3FF61E872C300004C32E /* PlannedParenthood.swift in Sources */,
 				0F8488941E86B74B00272488 /* Map1ViewController.swift in Sources */,
 				C0A564421E86CAF200947C9F /* tabOneTableViewController.swift in Sources */,
 				C068401E1E86AA55005E4CDA /* AppDelegate.swift in Sources */,

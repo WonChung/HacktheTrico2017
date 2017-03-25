@@ -10,14 +10,31 @@ import UIKit
 
 class tabTwoTableViewController: UITableViewController {
 
+    var plannedParenthoodData: [plannedParenthood]!
+    
+    var filteredPlannedParenthood = [plannedParenthood]()
+    
+    let searchController = UISearchController(searchResultsController: nil)
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // backButton.(self, action: #selector(goBack), for: .touchUpInside)
+        guard let jsonURL = Bundle.main.url(forResource: "plannedParenthoodData", withExtension: "json") else {
+            print("Could not find json!")
+            return
+        }
+        
+        let jsonData = NSData(contentsOf: jsonURL) as Data?
+        //if let jsonData = jsonData {
+        //    let json = try! JSONSerialization.jsonObject(with: jsonData) as! Array<Hospitals>
+        //}
+        var provider_name = [String]()
+        var provider_street_address = [String]()
+        var provider_zip_code = [String]()
+        var telephone = [String]()
+        var average_medicare_payments = [String]()
     }
 
     override func didReceiveMemoryWarning() {
