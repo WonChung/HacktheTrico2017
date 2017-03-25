@@ -1,0 +1,16 @@
+[
+	{
+		"provider_name": "Community Medical Center"
+		"provider_street_address": "1822 Mulberry Street, Scranton, PA"
+		"provider_zip_code": "18510"
+		"average_covered_charges": "27476.79"
+		"average_medicare_payment": "7477.66"
+	},
+	{
+		"provider_name": "UPMC McKeesport"
+		"provider_street_address": "1500 Fifth Avenue, Pittsburgh, PA"
+		"provider_zip_code": "15132"
+		"average_covered_charges": "9930.18"
+		"average_medicare_payment": "9621.45"
+	}
+]
