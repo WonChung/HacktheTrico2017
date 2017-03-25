@@ -21,7 +21,7 @@ class tabTwoTableViewController: UITableViewController, UISearchResultsUpdating 
         super.viewDidLoad()
 
         // backButton.(self, action: #selector(goBack), for: .touchUpInside)
-        guard let jsonURL = Bundle.main.url(forResource: "plannedParenthoodData", withExtension: "json") else {
+        guard let jsonURL = Bundle.main.url(forResource: "plannedparenthoodData", withExtension: "json") else {
             print("Could not find json!")
             return
         }

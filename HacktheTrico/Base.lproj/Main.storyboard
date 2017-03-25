@@ -143,7 +143,7 @@
             </objects>
             <point key="canvasLocation" x="1335" y="1250"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Tab One Table View Controller-->
         <scene sceneID="dd3-s8-KY5">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="W3R-F0-l33" customClass="tabOneTableViewController" customModule="HacktheTrico" customModuleProvider="target" sceneMemberID="viewController">
@@ -191,7 +191,7 @@
                             <outlet property="delegate" destination="W3R-F0-l33" id="T1d-Ta-e9V"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="NXV-Su-10D"/>
+                    <navigationItem key="navigationItem" id="NXV-Su-10D"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="48W-Rv-bal" id="kHn-RZ-hJc"/>
                     </connections>
