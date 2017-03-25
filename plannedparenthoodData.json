@@ -1,0 +1,65 @@
+{
+    "providers":[
+                 {
+                 "provider_name": "Planned Parenthood - Media Health Center",
+                 "provider_street_address": "216 W State St, Media, PA",
+                 "provider_zip_code": "19063",
+                 "telephone": "(610) 566-2830"
+                 },
+                 {
+                 "provider_name": "Planned Parenthood - Upper Darby Health Center",
+                 "provider_street_address": "7200 Chestnut St Suite 102, Upper Darby, PA",
+                 "provider_zip_code": "19082",
+                 "telephone": "(610) 626-9482"
+                 },
+                 {
+                 "provider_name": "Planned Parenthood - St. Davids Health Center",
+                 "provider_street_address": "515 Lancaster Ave, St Davids, PA",
+                 "provider_zip_code": "19087",
+                 "telephone": "(800) 230-7526"
+                 },
+                 {
+                 "provider_name": "Planned Parenthood - Elizabeth Blackwell Health Center",
+                 "provider_street_address": "1144 Locust St, Philadelphia, PA",
+                 "provider_zip_code": "19107",
+                 "telephone": "(215) 351-5560"
+                 },
+                 {
+                 "provider_name": "Planned Parenthood - Camden Health Center",
+                 "provider_street_address": "317 Broadway, Camden, NJ",
+                 "provider_zip_code": "08103",
+                 "telephone": "(856) 365-3519"
+                 },
+                 {
+                 "provider_name": "Planned Parenthood - Castor Avenue Health Center",
+                 "provider_street_address": "8210 Castor Ave, Philadelphia, PA",
+                 "provider_zip_code": "19152",
+                 "telephone": "(215) 745-5966"
+                 },
+                 {
+                 "provider_name": "Planned Parenthood - St. Davids Health Center",
+                 "provider_street_address": "515 Lancaster Ave, St Davids, PA",
+                 "provider_zip_code": "19087",
+                 "telephone": "(800) 230-7526"
+                 },
+                 {
+                 "provider_name": "Planned Parenthood - Norristown Health Center",
+                 "provider_street_address": "1221 Powell St, Norristown, PA",
+                 "provider_zip_code": "19401",
+                 "telephone": "(610) 279-6095"
+                 },
+                 {
+                 "provider_name": "Planned Parenthood - Castor Avenue Health Center",
+                 "provider_street_address": "8210 Castor Ave, Philadelphia, PA",
+                 "provider_zip_code": "19152",
+                 "telephone": "(215) 745-5966"
+                 },
+                 {
+                 "provider_name": "Planned Parenthood - Warminster Medical Center",
+                 "provider_street_address": "610 Louis Drive, Suite 303 - Second Floor, Warminster, PA",
+                 "provider_zip_code": "18974",
+                 "telephone": "(215) 957-7980"
+                 }
+                 
+                 ]
+}
