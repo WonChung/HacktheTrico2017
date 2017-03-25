@@ -67,7 +67,7 @@
         <!--Root View Controller-->
         <scene sceneID="BfU-6h-Xnd">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="fbj-Si-jq7" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="fbj-Si-jq7" customClass="tabTwoTableViewController" customModule="HacktheTrico" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="znW-jw-Snf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6kf-35-jDc" id="CI6-2t-fO0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -97,7 +97,7 @@
         <scene sceneID="I7T-Hu-Lnc">
             <objects>
                 <navigationController id="1nH-fa-f5K" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Znl-FE-cNv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Znl-FE-cNv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -125,17 +125,25 @@
         <!--Root View Controller-->
         <scene sceneID="dd3-s8-KY5">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="W3R-F0-l33" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="W3R-F0-l33" customClass="tabOneTableViewController" customModule="HacktheTrico" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LWD-CW-RR6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="g7A-gX-ABZ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="W3R-F0-l33" id="MtS-dx-XbE"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BoV-pS-GM6">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BoV-pS-GM6" id="qhM-Ui-liG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -146,8 +154,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="NXV-Su-10D"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="48W-Rv-bal" id="kHn-RZ-hJc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oav-lw-urV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="48W-Rv-bal">
+                    <connections>
+                        <outlet property="delegate" destination="W3R-F0-l33" id="PDh-1R-gbv"/>
+                        <outlet property="searchBar" destination="g7A-gX-ABZ" id="zye-eR-Kj1"/>
+                        <outlet property="searchContentsController" destination="W3R-F0-l33" id="96T-h1-H00"/>
+                        <outlet property="searchResultsDataSource" destination="W3R-F0-l33" id="fdn-9i-DG1"/>
+                        <outlet property="searchResultsDelegate" destination="W3R-F0-l33" id="2ag-eg-mkf"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="3241" y="-594"/>
         </scene>
