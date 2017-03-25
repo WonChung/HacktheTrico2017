@@ -1,0 +1,6 @@
+framework module Pods_HacktheTrico {
+  umbrella header "Pods-HacktheTrico-umbrella.h"
+
+  export *
+  module * { export * }
+}
