@@ -18,6 +18,8 @@
 		C06840281E86AA55005E4CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06840261E86AA55005E4CDA /* LaunchScreen.storyboard */; };
 		C06840331E86AA55005E4CDA /* HacktheTricoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06840321E86AA55005E4CDA /* HacktheTricoTests.swift */; };
 		C068403E1E86AA55005E4CDA /* HacktheTricoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068403D1E86AA55005E4CDA /* HacktheTricoUITests.swift */; };
+		C0A564421E86CAF200947C9F /* tabOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A564411E86CAF200947C9F /* tabOneTableViewController.swift */; };
+		C0A564441E86CB0D00947C9F /* tabTwoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A564431E86CB0D00947C9F /* tabTwoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		C06840391E86AA55005E4CDA /* HacktheTricoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HacktheTricoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C068403D1E86AA55005E4CDA /* HacktheTricoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HacktheTricoUITests.swift; sourceTree = "<group>"; };
 		C068403F1E86AA55005E4CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A564411E86CAF200947C9F /* tabOneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabOneTableViewController.swift; path = "Table Views/tabOneTableViewController.swift"; sourceTree = "<group>"; };
+		C0A564431E86CB0D00947C9F /* tabTwoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tabTwoTableViewController.swift; path = "Table Views/tabTwoTableViewController.swift"; sourceTree = "<group>"; };
 		C12C6B8E9C186A66F34841F5 /* Pods-HacktheTrico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTrico.release.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTrico/Pods-HacktheTrico.release.xcconfig"; sourceTree = "<group>"; };
 		DB59A8D74FE79A19A64D9F15 /* Pods-HacktheTricoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HacktheTricoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HacktheTricoUITests/Pods-HacktheTricoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E4F3548F1D524DD7EE30A658 /* Pods_HacktheTrico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HacktheTrico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +143,7 @@
 		C068401C1E86AA54005E4CDA /* HacktheTrico */ = {
 			isa = PBXGroup;
 			children = (
+				C0A564401E86CAC300947C9F /* Table Views */,
 				C068401D1E86AA55005E4CDA /* AppDelegate.swift */,
 				C068401F1E86AA55005E4CDA /* ViewController.swift */,
 				C06840211E86AA55005E4CDA /* Main.storyboard */,
@@ -166,6 +171,15 @@
 				C068403F1E86AA55005E4CDA /* Info.plist */,
 			);
 			path = HacktheTricoUITests;
+			sourceTree = "<group>";
+		};
+		C0A564401E86CAC300947C9F /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0A564411E86CAF200947C9F /* tabOneTableViewController.swift */,
+				C0A564431E86CB0D00947C9F /* tabTwoTableViewController.swift */,
+			);
+			name = "Table Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,8 +463,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A564441E86CB0D00947C9F /* tabTwoTableViewController.swift in Sources */,
 				C06840201E86AA55005E4CDA /* ViewController.swift in Sources */,
 				0F8488941E86B74B00272488 /* Map1ViewController.swift in Sources */,
+				C0A564421E86CAF200947C9F /* tabOneTableViewController.swift in Sources */,
 				C068401E1E86AA55005E4CDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
