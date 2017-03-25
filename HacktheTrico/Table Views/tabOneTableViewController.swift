@@ -29,6 +29,9 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
         let hospData = JSON(data: jsonData as Data)
         
         let allHospitalData = hospData.arrayValue
+        print(jsonData)
+        print(hospData)
+        print(allHospitalData)
         
         hospitalData = []
         
