@@ -8,11 +8,11 @@
 
 import UIKit
 
-class tabTwoTableViewController: UITableViewController {
+class tabTwoTableViewController: UITableViewController, UISearchResultsUpdating {
 
-    var plannedParenthoodData: [plannedParenthood]!
+    var plannedParenthoodData: [PlannedParenthood]!
     
-    var filteredPlannedParenthood = [plannedParenthood]()
+    var filteredPlannedParenthood = [PlannedParenthood]()
     
     let searchController = UISearchController(searchResultsController: nil)
 
@@ -34,7 +34,73 @@ class tabTwoTableViewController: UITableViewController {
         var provider_street_address = [String]()
         var provider_zip_code = [String]()
         var telephone = [String]()
-        var average_medicare_payments = [String]()
+        
+        do {
+            if let jsonData = jsonData,
+                let json = try JSONSerialization.jsonObject(with: jsonData) as? [String: Any],
+                let providers = json["providers"] as? [[String: Any]] {
+                for provider in providers {
+                    if let name = provider["provider_name"] as? String {
+                        provider_name.append(name)
+                    }
+                    if let address = provider["provider_street_address"] as? String {
+                        provider_street_address.append(address)
+                    }
+                    if let code = provider["provider_zip_code"] as? String {
+                        provider_zip_code.append(code)
+                    }
+                    if let charge = provider["telephone"] as? String {
+                        telephone.append(charge)
+                    }
+                }
+            }
+        } catch {
+            print("Error deserializing JSON: \(error)")
+        }
+        
+        plannedParenthoodData = []
+        var i = 0
+        for p in provider_name {
+            let currentPlan = PlannedParenthood()
+            currentPlan.provider_name = provider_name[i]
+            currentPlan.provider_street_address = provider_street_address[i]
+            currentPlan.provider_zip_code = provider_zip_code[i]
+            currentPlan.telephone = telephone[i]
+            i = i + 1
+        }
+        
+        print(plannedParenthoodData!.count)
+        tableView.reloadData()
+        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+        
+        searchController.hidesNavigationBarDuringPresentation = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        navigationController?.navigationBar.tintColor = UIColor.white;
+        
+        searchController.searchBar.barTintColor = UIColor.white
+        searchController.searchBar.tintColor = UIColor.black
+        searchController.searchBar.placeholder = "Enter Zip Code Here..."
+    }
+
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let searchBar:UISearchBar = searchController.searchBar
+        var searchBarFrame:CGRect = searchBar.frame
+        if searchController.isActive {
+            searchBarFrame.origin.y = 10
+        }
+        else {
+            searchBarFrame.origin.y = max(0, scrollView.contentOffset.y + scrollView.contentInset.top)
+            
+        }
+        searchController.searchBar.frame = searchBarFrame
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,28 +108,45 @@ class tabTwoTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        if searchController.isActive && searchController.searchBar.text != "" {
+            return filteredPlannedParenthood.count
+        }
+        return plannedParenthoodData.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        // 1
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tabTwoTableViewCell", for: indexPath) as! tabTwoTableViewCell
+        
+        let plannedParenthood: PlannedParenthood
+        if searchController.isActive && searchController.searchBar.text != "" {
+            plannedParenthood = filteredPlannedParenthood[indexPath.row]
+        } else {
+            plannedParenthood = plannedParenthoodData[indexPath.row]
+        }
+        
+        // 2
+        cell.planNameLabel.text = plannedParenthood.provider_name
+        
+        cell.separatorInset = UIEdgeInsets.zero;
+        
         return cell
     }
-    */
 
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+        filteredPlannedParenthood = plannedParenthoodData.filter { hospital in
+            return (hospital.provider_zip_code.range(of: searchText) != nil)
+        }
+        tableView.reloadData()
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        func updateSearchResultsForSearchController(searchController: UISearchController) {
+            filterContentForSearchText(searchText: searchController.searchBar.text as String!)
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
