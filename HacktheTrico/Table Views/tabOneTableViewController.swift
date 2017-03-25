@@ -70,8 +70,6 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
         print(average_medicare_payments)
         
 
-        
-            
     /*   if let array = jsonData as? [] {
             for object in array {
                 hospitalData.append(Hospitals(json: object))
@@ -81,10 +79,16 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
         
         
         hospitalData = []
-        
-        for hospital in provider_names {
-            let currentHospital = Hospitals(json: "hospitalData")
+        var  i = 0
+        for p in provider_names {
+            let currentHospital = Hospitals()
+            currentHospital.provider_name = provider_names[i]
+            currentHospital.provider_street_address = provider_street_addresses[i]
+            currentHospital.provider_zip_code = provider_zip_codes[i]
+            currentHospital.average_covered_charge = average_covered_charges[i]
+            currentHospital.average_medicare_payment = average_medicare_payments[i]
             hospitalData.append(currentHospital)
+            i = i + 1
         }
         
         print(hospitalData!.count)
