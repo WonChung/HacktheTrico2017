@@ -1,16 +1,75 @@
-[
-	{
-		"provider_name": "Community Medical Center"
-		"provider_street_address": "1822 Mulberry Street, Scranton, PA"
-		"provider_zip_code": "18510"
-		"average_covered_charges": "27476.79"
-		"average_medicare_payment": "7477.66"
-	},
-	{
-		"provider_name": "UPMC McKeesport"
-		"provider_street_address": "1500 Fifth Avenue, Pittsburgh, PA"
-		"provider_zip_code": "15132"
-		"average_covered_charges": "9930.18"
-		"average_medicare_payment": "9621.45"
-	}
-]
+{
+    "providers":[
+        {
+            "provider_name": "Community Medical Center",
+            "provider_street_address": "1822 Mulberry Street, Scranton, PA",
+            "provider_zip_code": "18510",
+            "average_covered_charge": "27476.79",
+            "average_medicare_payment": "7477.66"
+        },
+        {
+            "provider_name": "UPMC McKeesport",
+            "provider_street_address": "1500 Fifth Avenue, Pittsburgh, PA",
+            "provider_zip_code": "15132",
+            "average_covered_charge": "9930.18",
+            "average_medicare_payment": "9621.45"
+        },
+        {
+            "provider_name": "Lankenau Medical Center",
+            "provider_street_address": "100 Lancaster Avenue, Wynnewood, PA",
+            "provider_zip_code": "19096",
+            "average_covered_charge": "27476.79",
+            "average_medicare_payment": "7477.66"
+        },
+        {
+            "provider_name": "Mercy Health Associates",
+            "provider_street_address": "5630 Chestnut St, Philadelphia, PA",
+            "provider_zip_code": "15132",
+            "average_covered_charge": "9930.18",
+            "average_medicare_payment": "9621.45"
+        },
+        {
+            "provider_name": "Mercy Philadelphia Hospital",
+            "provider_street_address": "501 S 54th St, Philadelphia, PA",
+            "provider_zip_code": "19139",
+            "average_covered_charge": "9930.18",
+            "average_medicare_payment": "9621.45"
+        },
+        {
+            "provider_name": "Philadelphia VA Medical Center",
+            "provider_street_address": "3900 Woodland Ave, Philadelphia, PA",
+            "provider_zip_code": "19104",
+            "average_covered_charge": "27476.79",
+            "average_medicare_payment": "7477.66"
+        },
+        {
+            "provider_name": "Children's Hospital of Philadelphia",
+            "provider_street_address": "3401 Civic Center Blvd, Philadelphia, PA",
+            "provider_zip_code": "19104",
+            "average_covered_charge": "9930.18",
+            "average_medicare_payment": "9621.45"
+        },
+        {
+            "provider_name": "Hospital of the University of Pennsylvania",
+            "provider_street_address": "3400 Spruce St, Philadelphia, PA",
+            "provider_zip_code": "19104",
+            "average_covered_charge": "27476.79",
+            "average_medicare_payment": "7477.66"
+        },
+        {
+            "provider_name": "The Children's Hospital of Philadelphia:Child Development",
+            "provider_street_address": "3550 Market St, Philadelphia, PA",
+            "provider_zip_code": "19104",
+            "average_covered_charge": "9930.18",
+            "average_medicare_payment": "9621.45"
+        },
+        {
+            "provider_name": "Penn Presbyterian Medical Center",
+            "provider_street_address": "51 N 39th St, Philadelphia, PA",
+                 "provider_zip_code": "19104",
+            "average_covered_charge": "9930.18",
+            "average_medicare_payment": "9621.45"
+        }
+    
+    ]
+}

@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import Foundation
 
 class tabOneTableViewController: UITableViewController, UISearchResultsUpdating {
 
@@ -40,19 +41,69 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
             return
         }
         
-        let jsonData = NSData(contentsOf: jsonURL)!
-        let hospData = JSON(data: jsonData as Data)
+        let jsonData = NSData(contentsOf: jsonURL) as Data?
+        //if let jsonData = jsonData {
+        //    let json = try! JSONSerialization.jsonObject(with: jsonData) as! Array<Hospitals>
+        //}
+        var provider_names = [String]()
+        var provider_street_addresses = [String]()
+        var provider_zip_codes = [String]()
+        var average_covered_charges = [String]()
+        var average_medicare_payments = [String]()
+
         
-        let allHospitalData = hospData.arrayValue
-        print(jsonData)
-        print(hospData)
-        print(allHospitalData)
+        do {
+            if let jsonData = jsonData,
+                let json = try JSONSerialization.jsonObject(with: jsonData) as? [String: Any],
+                let providers = json["providers"] as? [[String: Any]] {
+                for provider in providers {
+                    if let name = provider["provider_name"] as? String {
+                        provider_names.append(name)
+                    }
+                    if let address = provider["provider_street_address"] as? String {
+                        provider_street_addresses.append(address)
+                    }
+                    if let code = provider["provider_zip_code"] as? String {
+                        provider_zip_codes.append(code)
+                    }
+                    if let charge = provider["average_covered_charge"] as? String {
+                        average_covered_charges.append(charge)
+                    }
+                    if let payment = provider["average_medicare_payment"] as? String {
+                        average_medicare_payments.append(payment)
+                    }
+                }
+            }
+        } catch {
+            print("Error deserializing JSON: \(error)")
+        }
+        
+        print(provider_names)
+        print(provider_street_addresses)
+        print(provider_zip_codes)
+        print(average_covered_charges)
+        print(average_medicare_payments)
+        
+
+    /*   if let array = jsonData as? [] {
+            for object in array {
+                hospitalData.append(Hospitals(json: object))
+            }
+        }*/
+        //let hospData = JSON(data: jsonData as Data)
+        
         
         hospitalData = []
-        
-        for hospital in allHospitalData {
-            let currentHospital = Hospitals(json: "hospitalData")
+        var  i = 0
+        for p in provider_names {
+            let currentHospital = Hospitals()
+            currentHospital.provider_name = provider_names[i]
+            currentHospital.provider_street_address = provider_street_addresses[i]
+            currentHospital.provider_zip_code = provider_zip_codes[i]
+            currentHospital.average_covered_charge = average_covered_charges[i]
+            currentHospital.average_medicare_payment = average_medicare_payments[i]
             hospitalData.append(currentHospital)
+            i = i + 1
         }
         
         print(hospitalData!.count)
