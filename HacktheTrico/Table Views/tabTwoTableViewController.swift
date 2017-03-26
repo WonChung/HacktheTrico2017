@@ -111,8 +111,10 @@ class tabTwoTableViewController: UITableViewController, UISearchResultsUpdating 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searchController.isActive && searchController.searchBar.text != "" {
             return filteredPlannedParenthood.count
+            print(filteredPlannedParenthood.count)
         }
         return plannedParenthoodData.count
+        print(plannedParenthoodData.count)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

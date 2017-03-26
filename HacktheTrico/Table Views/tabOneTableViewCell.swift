@@ -13,6 +13,12 @@ class tabOneTableViewCell: UITableViewCell {
     
     @IBOutlet weak var hospitalNameLabel: UILabel!
     
+    @IBOutlet weak var hospitalAddressLabel: UILabel!
+    
+    @IBOutlet weak var hospitalChargeLabel: UILabel!
+    
+    @IBOutlet weak var hospitalMedicareLabel: UILabel!
+    
     
     /*
     override func awakeFromNib() {

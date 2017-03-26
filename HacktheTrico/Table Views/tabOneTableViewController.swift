@@ -228,6 +228,9 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
         
         // 2
         cell.hospitalNameLabel.text = hospital.provider_name
+        cell.hospitalAddressLabel.text = hospital.provider_street_address + " " + hospital.provider_zip_code
+        cell.hospitalChargeLabel.text = "Average Covered Charge: " + hospital.average_covered_charge
+        cell.hospitalMedicareLabel.text = "Average Medicare Payment: " + hospital.average_medicare_payment
         
         cell.separatorInset = UIEdgeInsets.zero;
         

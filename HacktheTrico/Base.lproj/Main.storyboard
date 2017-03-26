@@ -119,7 +119,7 @@
         <scene sceneID="dd3-s8-KY5">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="W3R-F0-l33" customClass="tabOneTableViewController" customModule="HacktheTrico" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LWD-CW-RR6">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="179" sectionHeaderHeight="28" sectionFooterHeight="28" id="LWD-CW-RR6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,28 +132,57 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tabOneTableViewCell" id="BoV-pS-GM6" customClass="tabOneTableViewCell" customModule="HacktheTrico" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tabOneTableViewCell" rowHeight="179" id="BoV-pS-GM6" customClass="tabOneTableViewCell" customModule="HacktheTrico" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="179"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BoV-pS-GM6" id="qhM-Ui-liG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-aH-SR1">
-                                            <rect key="frame" x="104" y="11" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-aH-SR1">
+                                            <rect key="frame" x="20" y="8" width="45" height="39"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Covered Charges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc8-JW-g7a">
+                                            <rect key="frame" x="15" y="99" width="133" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Medicare Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLz-bM-u5q">
+                                            <rect key="frame" x="15" y="138" width="142" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZJ-uf-qLX">
+                                            <rect key="frame" x="20" y="55" width="63" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="gMj-aH-SR1" firstAttribute="leading" secondItem="qhM-Ui-liG" secondAttribute="leadingMargin" constant="96" id="MDp-2X-ZtB"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="gMj-aH-SR1" secondAttribute="bottom" constant="3.5" id="V59-L7-jAc"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="gMj-aH-SR1" secondAttribute="trailing" constant="221" id="kLB-Zy-af4"/>
-                                        <constraint firstItem="gMj-aH-SR1" firstAttribute="top" secondItem="qhM-Ui-liG" secondAttribute="topMargin" constant="3" id="uow-dV-Ugs"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gMj-aH-SR1" secondAttribute="trailing" id="3iS-Z3-sRo"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="qc8-JW-g7a" secondAttribute="trailing" id="59J-1Y-6Y3"/>
+                                        <constraint firstItem="MLz-bM-u5q" firstAttribute="leading" secondItem="qhM-Ui-liG" secondAttribute="leadingMargin" constant="5" id="7Pa-M8-3Zz"/>
+                                        <constraint firstItem="zZJ-uf-qLX" firstAttribute="top" secondItem="gMj-aH-SR1" secondAttribute="bottom" constant="5" id="I6M-lv-Bzr"/>
+                                        <constraint firstItem="qc8-JW-g7a" firstAttribute="top" secondItem="zZJ-uf-qLX" secondAttribute="bottom" constant="5" id="Jht-hq-FYL"/>
+                                        <constraint firstItem="MLz-bM-u5q" firstAttribute="top" secondItem="qc8-JW-g7a" secondAttribute="bottom" constant="5" id="OZ6-Jm-LCU"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="MLz-bM-u5q" secondAttribute="trailing" id="Sey-ta-9fs"/>
+                                        <constraint firstItem="qc8-JW-g7a" firstAttribute="leading" secondItem="qhM-Ui-liG" secondAttribute="leadingMargin" constant="5" id="bOH-vq-c8t"/>
+                                        <constraint firstItem="gMj-aH-SR1" firstAttribute="top" secondItem="qhM-Ui-liG" secondAttribute="topMargin" constant="5" id="fSD-Lx-5Rv"/>
+                                        <constraint firstItem="gMj-aH-SR1" firstAttribute="leading" secondItem="qhM-Ui-liG" secondAttribute="leadingMargin" constant="5" id="nvv-P0-cSe"/>
+                                        <constraint firstItem="zZJ-uf-qLX" firstAttribute="leading" secondItem="qhM-Ui-liG" secondAttribute="leadingMargin" constant="5" id="vJU-Fa-rfz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zZJ-uf-qLX" secondAttribute="trailing" id="yvJ-da-HmQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="hospitalAddressLabel" destination="zZJ-uf-qLX" id="bVg-S0-7y8"/>
+                                    <outlet property="hospitalChargeLabel" destination="qc8-JW-g7a" id="eiL-PD-LD0"/>
+                                    <outlet property="hospitalMedicareLabel" destination="MLz-bM-u5q" id="YwE-zR-Avr"/>
                                     <outlet property="hospitalNameLabel" destination="gMj-aH-SR1" id="nwy-8S-q7K"/>
                                 </connections>
                             </tableViewCell>
@@ -179,7 +208,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="3241" y="-594"/>
+            <point key="canvasLocation" x="3240.8000000000002" y="-594.15292353823088"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BCz-dd-H4J">

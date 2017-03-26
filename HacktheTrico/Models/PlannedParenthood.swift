@@ -18,7 +18,7 @@ class PlannedParenthood: Object{
     
     convenience init(json:JSON){
         self.init()
-        self.provider_name = json["provider_street_address"].stringValue
+        self.provider_name = json["provider_name"].stringValue
         self.provider_street_address = json["provider_street_address"].stringValue
         self.provider_zip_code = json["provider_zip_code"].stringValue
         self.telephone = json["services"]["providers"]["telephone"].stringValue
