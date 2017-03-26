@@ -15,7 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let rootViewController = self.window!.rootViewController
+        
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // left view Controller along with centre view controller
+        let leftViewController = mainStoryboard.instantiateViewController(withIdentifier: "LeftSideViewController") as! UISplitViewController
+        
+        // Right view Controller along with centre view controller
+        let rightViewController = mainStoryboard.instantiateViewController(withIdentifier: "RightSideViewController") as! UISplitViewController
+        
+        let leftNavController = leftViewController.viewControllers.first as! UINavigationController
+        let masterLViewController = leftNavController.topViewController as! tabOneTableViewController
+        
+        let rightNavController = rightViewController.viewControllers.first as! UINavigationController
+        let masterRViewController = rightNavController.topViewController as! tabTwoTableViewController
+
         return true
     }
 

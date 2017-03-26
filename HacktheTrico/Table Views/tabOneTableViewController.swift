@@ -102,7 +102,7 @@ class tabOneTableViewController: UITableViewController, UISearchResultsUpdating 
     
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(false)
+        super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         navigationController?.navigationBar.tintColor = UIColor.white;
